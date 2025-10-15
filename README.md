@@ -5,4 +5,3 @@
 git clone LINK_GITHUB da um enter. Novamente, file open folder: seleciona tudo e apaga.
 
 - /var/www/html/curso_php_26 e da um ok. Após, termimnal novo terminal verifica se esta em: /var/www/html/curso_php_26.
- 
