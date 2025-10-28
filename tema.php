@@ -12,52 +12,51 @@ $valor7 =7;
 $valor8 =8;
 $valor9 =9;
 $valor10 =10;
+ECHO "Tabuada do 5";
+ECHO "<br>";
+$multiplicaçãoV1 = $valor1 * $valor5;
+$multiplicaçãoV2 = $valor2 * $valor5;
+$multiplicaçãoV3 = $valor3 * $valor5;
+$multiplicaçãoV4 = $valor4 * $valor5;
+$multiplicaçãoV5 = $valor5 * $valor5;
+$multiplicaçãoV6 = $valor6 * $valor5;
+$multiplicaçãoV7 = $valor7 * $valor5;
+$multiplicaçãoV8 = $valor8 * $valor5;
+$multiplicaçãoV9 = $valor9 * $valor5;
+$multiplicaçãoV10 = $valor10 * $valor5;
 
-ECHO $multiplicação = $valor1 * $valor5;
-ECHO $multiplicação = $valor2 * $valor5;
-ECHO $multiplicação = $valor3 * $valor5;
-ECHO $multiplicação = $valor4 * $valor5;
-ECHO $multiplicação = $valor5 * $valor5;
-ECHO $multiplicação = $valor6 * $valor5;
-ECHO $multiplicação = $valor7 * $valor5;
-ECHO $multiplicação = $valor8 * $valor5;
-ECHO $multiplicação = $valor9 * $valor5;
-ECHO $multiplicação = $valor10 * $valor5;
+ECHO "$valor1 X $valor5 = $multiplicaçãoV1";
+ECHO "<br>";
+ECHO "$valor2 X $valor5 = $multiplicaçãoV2";
+ECHO "<br>";
+ECHO "$valor3 X $valor5 = $multiplicaçãoV3";
+ECHO "<br>";
+ECHO "$valor4 X $valor5 = $multiplicaçãoV4";
+ECHO "<br>";
+ECHO "$valor5 X $valor5 = $multiplicaçãoV5";
+ECHO "<br>";
+ECHO "$valor6 X $valor5 = $multiplicaçãoV6";
+ECHO "<br>";
+ECHO "$valor7 X $valor5 = $multiplicaçãoV7";
+ECHO "<br>";
+ECHO "$valor8 X $valor5 = $multiplicaçãoV8";
+ECHO "<br>";
+ECHO "$valor9 X $valor5 = $multiplicaçãoV9";
+ECHO "<br>";
+ECHO "$valor10 X $valor5 = $multiplicaçãoV10";
+ECHO "<br>";
 
-
-//ECHO $multiplicação = $valor1 * $valor5 "<br>";
-//ECHO $multiplicação = $valor2 * $valor5 "<br>";
-//ECHO $multiplicação = $valor3 * $valor5 "<br>";
-//ECHO $multiplicação = $valor4 * $valor5 "<br>";
-//ECHO $multiplicação = $valor5 * $valor5 "<br>";
-//ECHO $multiplicação = $valor6 * $valor5 "<br>";
-//ECHO $multiplicação = $valor7 * $valor5 "<br>";
-//ECHO $multiplicação = $valor8 * $valor5 "<br>";
-//ECHO $multiplicação = $valor9 * $valor5 "<br>";
-//ECHO $multiplicação = $valor10 * $valor5 "<br>";
-
-ECHO $multiplicação = $valor1 * $valor6;
-ECHO $multiplicação = $valor2 * $valor6;
-ECHO $multiplicação = $valor3 * $valor6;
-ECHO $multiplicação = $valor4 * $valor6;
-ECHO $multiplicação = $valor5 * $valor6;
-ECHO $multiplicação = $valor6 * $valor6;
-ECHO $multiplicação = $valor7 * $valor6;
-ECHO $multiplicação = $valor8 * $valor6;
-ECHO $multiplicação = $valor9 * $valor6;
-ECHO $multiplicação = $valor10 * $valor6;
-
-
-//ECHO $multiplicação = $valor1 * $valor6 "<br>";
-//ECHO $multiplicação = $valor2 * $valor6 "<br>";
-//ECHO $multiplicação = $valor3 * $valor6 "<br>";
-//ECHO $multiplicação = $valor4 * $valor6 "<br>";
-//ECHO $multiplicação = $valor5 * $valor6 "<br>";
-//ECHO $multiplicação = $valor6 * $valor6 "<br>";
-//ECHO $multiplicação = $valor7 * $valor6 "<br>";
-//ECHO $multiplicação = $valor8 * $valor6 "<br>";
-//ECHO $multiplicação = $valor9 * $valor6 "<br>";
-//ECHO $multiplicação = $valor10 * $valor6 "<br>";
+ECHO "Tabuada do 6";
+ECHO $multiplicaçãoVI1 = $valor1 * $valor6;
+ECHO $multiplicaçãoVI2 = $valor2 * $valor6;
+ECHO $multiplicaçãoVI3 = $valor3 * $valor6;
+ECHO $multiplicaçãoVI4 = $valor4 * $valor6;
+ECHO $multiplicaçãoVI5 = $valor5 * $valor6;
+ECHO $multiplicaçãoVI6 = $valor6 * $valor6;
+ECHO $multiplicaçãoVI7 = $valor7 * $valor6;
+ECHO $multiplicaçãoVI8 = $valor8 * $valor6;
+ECHO $multiplicaçãoVI9 = $valor9 * $valor6;
+ECHO $multiplicaçãoVI10 = $valor10 * $valor6;
 
 
 //Tema 2
