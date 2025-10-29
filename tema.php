@@ -86,6 +86,7 @@ $P4 = 4;
 $P5 = 24;
 
 $soma2 = (($V1 * $P1) + ($V2 * $P2) + ($V3 * $P3) + ($V4 * $P4) + ($V5 * $P5)) / ($P1 + $P2 + $P3 + $P4 + $P5);
+//ECHO "<br>"
 ECHO "A Média Ponderada do meu semestre escolar foi de $soma2";
 
 //Harmonica
@@ -96,4 +97,5 @@ $KM4 = 9;
 $KM5 = 2;
 $KMT = 5;
 $soma3 = $KMT / (( 1 / $KM1 ) + ( 1 / $KM2 ) + ( 1 / $KM3 ) + ( 1 / $KM4 ) + (1 / $KM5));
+//ECHO "<br>"
 ECHO "A Média Harmonica da minha viagem é $soma3";
