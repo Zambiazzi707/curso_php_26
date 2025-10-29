@@ -24,3 +24,21 @@ echo "<br>";
 $cek = $kec - 273.15;
 echo "Ao converter $kec" . "ºK em ºC obtemos $cek" . "ºC";
 echo "<br>";
+
+$Aleatória = 4;
+
+$TenhoDinheiro = true;
+$QueroUmCafe = true;
+if($TenhoDinheiro && $QueroUmCafe)
+{
+    $Aleatória = 3; // esse valor só existe aqui
+    echo "Compro um café <br>";
+} else if ($TenhoDinheiro && !$QueroUmCafe){
+    echo "Vou comprar chocolate <br>";
+} else {
+    echo "Não vou comprar nada <br>";
+}
+
+// if = Definir algo, usado para começar, obrigatório, "Se..."
+// else if = Define outro if, "Se o último não funcionar..."
+// else =  Encerra por fim o escobo/contexto "Se nada de tudo acima funcionar..."
