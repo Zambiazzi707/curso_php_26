@@ -12,8 +12,9 @@ $valor7 =7;
 $valor8 =8;
 $valor9 =9;
 $valor10 =10;
-ECHO "Tabuada do 5";
-ECHO "<br>";
+echo "\n";
+echo "Tabuada do 5";
+echo "\n";
 $multiplicaçãoV1 = $valor1 * $valor5;
 $multiplicaçãoV2 = $valor2 * $valor5;
 $multiplicaçãoV3 = $valor3 * $valor5;
@@ -24,40 +25,61 @@ $multiplicaçãoV7 = $valor7 * $valor5;
 $multiplicaçãoV8 = $valor8 * $valor5;
 $multiplicaçãoV9 = $valor9 * $valor5;
 $multiplicaçãoV10 = $valor10 * $valor5;
-
-ECHO "$valor1 X $valor5 = $multiplicaçãoV1";
-ECHO "<br>";
-ECHO "$valor2 X $valor5 = $multiplicaçãoV2";
-ECHO "<br>";
-ECHO "$valor3 X $valor5 = $multiplicaçãoV3";
-ECHO "<br>";
-ECHO "$valor4 X $valor5 = $multiplicaçãoV4";
-ECHO "<br>";
-ECHO "$valor5 X $valor5 = $multiplicaçãoV5";
-ECHO "<br>";
-ECHO "$valor6 X $valor5 = $multiplicaçãoV6";
-ECHO "<br>";
-ECHO "$valor7 X $valor5 = $multiplicaçãoV7";
-ECHO "<br>";
-ECHO "$valor8 X $valor5 = $multiplicaçãoV8";
-ECHO "<br>";
-ECHO "$valor9 X $valor5 = $multiplicaçãoV9";
-ECHO "<br>";
-ECHO "$valor10 X $valor5 = $multiplicaçãoV10";
-ECHO "<br>";
-
-ECHO "Tabuada do 6";
-ECHO $multiplicaçãoVI1 = $valor1 * $valor6;
-ECHO $multiplicaçãoVI2 = $valor2 * $valor6;
-ECHO $multiplicaçãoVI3 = $valor3 * $valor6;
-ECHO $multiplicaçãoVI4 = $valor4 * $valor6;
-ECHO $multiplicaçãoVI5 = $valor5 * $valor6;
-ECHO $multiplicaçãoVI6 = $valor6 * $valor6;
-ECHO $multiplicaçãoVI7 = $valor7 * $valor6;
-ECHO $multiplicaçãoVI8 = $valor8 * $valor6;
-ECHO $multiplicaçãoVI9 = $valor9 * $valor6;
-ECHO $multiplicaçãoVI10 = $valor10 * $valor6;
-
+echo "\n";
+echo "$valor1 X $valor5 = $multiplicaçãoV1";
+echo "\n";
+echo "$valor2 X $valor5 = $multiplicaçãoV2";
+echo "\n";
+echo "$valor3 X $valor5 = $multiplicaçãoV3";
+echo "\n";
+echo "$valor4 X $valor5 = $multiplicaçãoV4";
+echo "\n";
+echo "$valor5 X $valor5 = $multiplicaçãoV5";
+echo "\n";
+echo "$valor6 X $valor5 = $multiplicaçãoV6";
+echo "\n";
+echo "$valor7 X $valor5 = $multiplicaçãoV7";
+echo "\n";
+echo "$valor8 X $valor5 = $multiplicaçãoV8";
+echo "\n";
+echo "$valor9 X $valor5 = $multiplicaçãoV9";
+echo "\n";
+echo "$valor10 X $valor5 = $multiplicaçãoV10";
+echo "\n";
+echo "\n";
+echo "Tabuada do 6";
+echo "\n";
+$multiplicaçãoVI1 = $valor1 * $valor6;
+$multiplicaçãoVI2 = $valor2 * $valor6;
+$multiplicaçãoVI3 = $valor3 * $valor6;
+$multiplicaçãoVI4 = $valor4 * $valor6;
+$multiplicaçãoVI5 = $valor5 * $valor6;
+$multiplicaçãoVI6 = $valor6 * $valor6;
+$multiplicaçãoVI7 = $valor7 * $valor6;
+$multiplicaçãoVI8 = $valor8 * $valor6;
+$multiplicaçãoVI9 = $valor9 * $valor6;
+$multiplicaçãoVI10 = $valor10 * $valor6;
+echo "\n";
+echo "$valor1 X $valor6 = $multiplicaçãoVI1";
+echo "\n";
+echo "$valor2 X $valor6 = $multiplicaçãoVI2";
+echo "\n";
+echo "$valor3 X $valor6 = $multiplicaçãoVI3";
+echo "\n";
+echo "$valor4 X $valor6 = $multiplicaçãoVI4";
+echo "\n";
+echo "$valor5 X $valor6 = $multiplicaçãoVI5";
+echo "\n";
+echo "$valor6 X $valor6 = $multiplicaçãoVI6";
+echo "\n";
+echo "$valor7 X $valor6 = $multiplicaçãoVI7";
+echo "\n";
+echo "$valor8 X $valor6 = $multiplicaçãoVI8";
+echo "\n";
+echo "$valor9 X $valor6 = $multiplicaçãoVI9";
+echo "\n";
+echo "$valor10 X $valor6 = $multiplicaçãoVI10";
+echo "\n";
 
 //Tema 2
 
@@ -69,8 +91,9 @@ $Nota4 = 24;
 $Nota5 = 12;
 
 $soma1 = ($Nota1 + $Nota2 + $Nota3 + $Nota4 + $Nota5) / 5;
-//ECHO "<br>"
-ECHO "A média aritimética das notas é $soma1";
+echo "\n";
+echo "A média aritimética das notas é $soma1";
+echo "\n";
 
 //Ponderada
 $V1 = 10;
@@ -86,8 +109,9 @@ $P4 = 4;
 $P5 = 24;
 
 $soma2 = (($V1 * $P1) + ($V2 * $P2) + ($V3 * $P3) + ($V4 * $P4) + ($V5 * $P5)) / ($P1 + $P2 + $P3 + $P4 + $P5);
-//ECHO "<br>"
-ECHO "A Média Ponderada do meu semestre escolar foi de $soma2";
+echo "\n";
+echo "A Média Ponderada do meu semestre escolar foi de $soma2";
+echo "\n";
 
 //Harmonica
 $KM1 = 7;
@@ -97,5 +121,5 @@ $KM4 = 9;
 $KM5 = 2;
 $KMT = 5;
 $soma3 = $KMT / (( 1 / $KM1 ) + ( 1 / $KM2 ) + ( 1 / $KM3 ) + ( 1 / $KM4 ) + (1 / $KM5));
-//ECHO "<br>"
-ECHO "A Média Harmonica da minha viagem é $soma3";
+echo "\n";
+echo "A Média Harmonica da minha viagem é $soma3";
