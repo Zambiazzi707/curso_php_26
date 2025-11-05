@@ -30,7 +30,39 @@ if ($operador == "+"){
 }else if ($operador == "/"){
     $resultado = $valor1 / $valor2;
     echo "A Divisão de $valor1 / $valor2 = $resultado";
+}else{
+    echo "Operador Inválido!";
 }
+echo "<br>";
+
+//Dados da Calculadora SWITCH 
+$operador = "+";
+$valor1 =2;
+$valor2 =6;
+
+switch($operador) {
+    case "+";
+        $resultado = $valor1 + $valor2;
+        echo "A Soma dos valores $valor1 + $valor2 = $resultado";
+        break;
+    case "-";
+        $resultado = $valor1 - $valor2;
+        echo "A Subtração dos valores $valor1 - $valor2 = $resultado";
+        break;
+    case "*";
+        $resultado = $valor1 * $valor2;
+        echo "A Multiplicação dos valores $valor1 * $valor2 = $resultado";
+        break;
+    case "/";
+        $resultado = $valor1 / $valor2;
+        echo "A Divisão dos valores $valor1 / $valor2 = $resultado";
+        break;
+    default:
+        echo "Operador Inválido!";
+        break;
+}
+// "if e else" e "switch e case" são a mesma coisa, mesma função
+
 echo "<br><br><br>";
 echo "NOTAS:";
 echo "<br>";
