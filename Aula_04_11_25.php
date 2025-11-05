@@ -31,9 +31,7 @@ if ($operador == "+"){
     $resultado = $valor1 / $valor2;
     echo "A Divisão de $valor1 / $valor2 = $resultado";
 }
-echo "<br>";
-echo "<br>";
-echo "<br>";
+echo "<br><br><br>";
 echo "NOTAS:";
 echo "<br>";
 
@@ -100,3 +98,15 @@ if ($soma3 > 6){
     echo "REPROVADO! com nota $soma3";
 }
 echo "<br>";
+
+//Exercício 9 página 16.
+echo "<br>";
+$fulano = "Jair";
+$idadeDoFulano = "43";
+echo "$fulano tentou acessar esse site, permissão por idade necessária.";
+echo "<br>";
+if ($idadeDoFulano > 18){
+    echo "$fulano é maior de 18, ele possui $idadeDoFulano anos. Acesso concedido.";
+}else if ($idadeDoFulano < 18){
+    echo "$fulano não é maior de 18, ele possui $idadeDoFulano anos. Acesso negado.";
+}
