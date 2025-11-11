@@ -123,3 +123,15 @@ $KMT = 5;
 $soma3 = $KMT / (( 1 / $KM1 ) + ( 1 / $KM2 ) + ( 1 / $KM3 ) + ( 1 / $KM4 ) + (1 / $KM5));
 echo "\n";
 echo "A Média Harmonica da minha viagem é $soma3";
+
+echo "\n" . "\n";
+
+//Tema 04/11/25 
+
+$parOuImpar = 17;
+
+if($parOuImpar % 2 == 0){
+    echo "$parOuImpar é par";
+}else{
+    echo "$parOuImpar é ímpar";
+} 
