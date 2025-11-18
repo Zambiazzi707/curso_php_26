@@ -1,5 +1,5 @@
 <?php
-
+/*
 //TEMA 1
 
 $valor1 =1;
@@ -135,3 +135,61 @@ if($parOuImpar % 2 == 0){
 }else{
     echo "$parOuImpar é ímpar";
 } 
+*/
+//Tema 11/11/25
+
+echo "\n\n\n";
+
+echo "Tabuada do 5 (while):";
+$numero = 5;
+$multiplicador = 1;
+while ($multiplicador < 11){
+    echo "\n $numero X $multiplicador = " . $numero * $multiplicador;
+    $multiplicador++;
+}
+
+echo "\n\n\n";
+
+echo "Par ou Ímpar? (while)";
+$imparOuPar = 0;
+while ($imparOuPar <= 10){
+    if ($imparOuPar % 2 == 0){
+        echo "\n $imparOuPar é Par.";
+    }else{
+        echo "\n $imparOuPar é Ímpar.";
+    }
+    $imparOuPar++;
+}
+
+echo "\n\n\n";
+
+echo "Números pares até 50 (while) \n";
+$numeralPar = 0;
+while ($numeralPar <= 50){
+    if($numeralPar % 2 == 0){
+        echo "$numeralPar é Par.\n";
+    }else{
+        echo "O número $numeralPar náo é Par!";
+    }
+    $numeralPar += 2;
+}
+
+echo "\n\n\n";
+
+echo "Ordem decrescente! (while) \n";
+$OrdemDecrescente = 15;
+while ($OrdemDecrescente > 0){
+    echo "\n $OrdemDecrescente";
+    $OrdemDecrescente--;
+}
+
+echo "\n\n\n";
+
+$number = 6;
+echo "O fatorial de $number é ";
+$fatorial = $number-1;
+while($fatorial >= 1){
+    $number *= $fatorial;
+    $fatorial--;
+}
+echo "$number";
