@@ -135,7 +135,7 @@ if($parOuImpar % 2 == 0){
 }else{
     echo "$parOuImpar é ímpar";
 } 
-*/
+
 //Tema 11/11/25
 
 echo "\n\n\n";
@@ -193,3 +193,5 @@ while($fatorial >= 1){
     $fatorial--;
 }
 echo "$number";
+*/ 
+
