@@ -4,7 +4,7 @@
 Int | Integer == 1, 2, 3 ...
 Float | Double == 1.0, 2.0, 3.0 ...
 String |Char-Character == "Oi", 'o' ...
-*
+*/
 
 $texto = ""; //String vazia
 
@@ -33,7 +33,7 @@ var_dump ($numeros);//
 
 echo "<br> implode:<br>";
 echo implode("<br>", $numeros); // mostra igual o for com uma string antes
-*
+*/
 //Atividade 
 
 $i = 0;
@@ -41,11 +41,11 @@ while($i < 6) {
     echo $numeros [$i] . "<br>";
     $i++;
 }
-*/
+
 
 // Exercício: Encontrar os 5 primeiros números Primos.
 // Salvar os números em array
-/*
+
 $contador = [];
 
 for($a = 0; $a <= 10; $a++) {
@@ -54,7 +54,7 @@ for($a = 0; $a <= 10; $a++) {
 
     $contador[] = $a; //A variável vai ter o mesmo valor do índice
 }
-*/
+
 
 $contadorDeNumPrimos = 0;
 
@@ -86,3 +86,28 @@ for ($i = 0; $i < 5; $i++){
     
     echo $arrayDePrimos[$i] . "<br>";
 }
+echo "<br> . <br> . <br>";
+/*
+Somar arrays:
+$arrayInicio = [5, 10, 50];
+$arrayFim = [10, 90, 30];
+Resultado esperado:
+$arraySoma = [15, 100, 80];
+
+
+Multiplicar arrays:
+$arrayInicio = [5, 10, 8];
+$arrayFim = [10, 100, 3];
+Resultado esperado:
+$arraySoma = [50, 1000, 24];
+*/
+
+$arrayInicio = [5, 10, 50];
+$arrayFim = [10, 90, 30];
+$arraySoma = [];
+
+for ($i = 0; $i < 3; $i++) {
+    $arraySoma[$i] = $arrayInicio[$i] + $arrayFim[$i];
+}
+echo "<br> ArraySoma = ";
+echo implode (", ", $arraySoma);
