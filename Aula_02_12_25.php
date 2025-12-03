@@ -58,7 +58,7 @@ for($a = 0; $a <= 10; $a++) {
 
 $contadorDeNumPrimos = 0;
 
-for ($primoOuNao = 3; $contadorDeNumPrimos < 2000; $primoOuNao++) {
+for ($primoOuNao = 3; $contadorDeNumPrimos < 5; $primoOuNao++) {
 
     $antecessor = $primoOuNao -1;
     $ehPrimo = true;
@@ -75,13 +75,14 @@ for ($primoOuNao = 3; $contadorDeNumPrimos < 2000; $primoOuNao++) {
     }
 
     if ($ehPrimo == true){
+        // array_push($arrayDePrimos, $primoOuNao)
         $arrayDePrimos[] = $primoOuNao;
         $contadorDeNumPrimos++;
     }
 
 }
 
-for ($i = 0; $i < 2000; $i++){
+for ($i = 0; $i < 5; $i++){
     
     echo $arrayDePrimos[$i] . "<br>";
 }
