@@ -102,12 +102,22 @@ Resultado esperado:
 $arraySoma = [50, 1000, 24];
 */
 
-$arrayInicio = [5, 10, 50];
-$arrayFim = [10, 90, 30];
+$arrayInicioS = [5, 10, 50];
+$arrayFimS = [10, 90, 30];
 $arraySoma = [];
 
 for ($i = 0; $i < 3; $i++) {
-    $arraySoma[$i] = $arrayInicio[$i] + $arrayFim[$i];
+    $arraySoma[$i] = $arrayInicioS[$i] + $arrayFimS[$i];
 }
 echo "<br> ArraySoma = ";
 echo implode (", ", $arraySoma);
+
+$arrayInicioM = [5, 10, 8];
+$arrayFimM = [10, 100, 3];
+$arrayMultiplicacao = [];
+
+for ($i = 0; $i < 3; $i++) {
+    $arrayMultiplicacao[$i] = $arrayInicioM[$i] * $arrayFimM[$i];
+}
+echo "<br> ArraySoma = ";
+echo implode (", ", $arrayMultiplicacao);

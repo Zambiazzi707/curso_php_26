@@ -1,6 +1,6 @@
 <?php
 /*
-//TEMA 1
+//TEMA 1 ----------------------------------------------------------------------------------------------------
 
 $valor1 =1;
 $valor2 =2;
@@ -81,7 +81,7 @@ echo "\n";
 echo "$valor10 X $valor6 = $multiplicaçãoVI10";
 echo "\n";
 
-//Tema 2
+//Tema 2 ----------------------------------------------------------------------------------------------------
 
 //Aritimética
 $Nota1 = 12;
@@ -126,7 +126,7 @@ echo "A Média Harmonica da minha viagem é $soma3";
 
 echo "\n" . "\n";
 
-//Tema 04/11/25 
+//Tema 04/11/25 ----------------------------------------------------------------------------------------------------
 
 $parOuImpar = 17;
 
@@ -136,7 +136,7 @@ if($parOuImpar % 2 == 0){
     echo "$parOuImpar é ímpar";
 } 
 
-//Tema 11/11/25
+//Tema 11/11/25 ----------------------------------------------------------------------------------------------------
 
 echo "\n\n\n";
 
@@ -193,5 +193,36 @@ while($fatorial >= 1){
     $fatorial--;
 }
 echo "$number";
-*/ 
+*/
 
+$contadorDeNumPrimos = 0;
+$primoOuNao = 3;
+
+
+while ($contadorDeNumPrimos < 5) {
+
+    $antecessor = $primoOuNao - 1;
+    $ehPrimo = true;
+    
+    $divisor = 2;
+
+    while ($divisor <= $antecessor) {
+
+        $restoDaDivisao = $primoOuNao % $divisor;
+        $ehDivisaoExata = $restoDaDivisao == 0;
+
+        if ($ehDivisaoExata) {
+            $ehPrimo = false;
+            break;
+        }
+
+        $divisor++;
+    }
+
+    if ($ehPrimo == true){
+        echo "O número $primoOuNao é primo <br> \n";
+        $contadorDeNumPrimos++;
+    }
+
+    $primoOuNao++;
+}
