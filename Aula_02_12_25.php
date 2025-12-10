@@ -119,5 +119,5 @@ $arrayMultiplicacao = [];
 for ($i = 0; $i < 3; $i++) {
     $arrayMultiplicacao[$i] = $arrayInicioM[$i] * $arrayFimM[$i];
 }
-echo "<br> ArraySoma = ";
+echo "<br> ArrayMultiplicação = ";
 echo implode (", ", $arrayMultiplicacao);
