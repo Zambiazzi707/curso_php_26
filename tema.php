@@ -193,7 +193,7 @@ while($fatorial >= 1){
     $fatorial--;
 }
 echo "$number";
-*/
+*
 
 $contadorDeNumPrimos = 0;
 $primoOuNao = 3;
@@ -226,3 +226,68 @@ while ($contadorDeNumPrimos < 5) {
 
     $primoOuNao++;
 }
+*/
+
+//Tema dia 09/12/25 ------------------------------------------------------------------------------------------------------------------------------
+
+/*Contar quantas vogais existem em um frase ou palavra.
+* $vogais = ['a', 'e', 'i', 'o', 'u'];
+* $vogalMinuscula = strtolower($palavra[$i]);
+* $existeVogal = in_array($vogalMinuscula, $vogais);
+
+* Ex.:
+* $palavra = "infoserv":
+* $palavra = "infosErv";
+* Saida esperada: 3 vogais. 
+
+
+Contar quantas vogais existem em um frase ou palavra. Totalizando a quantidade de cada uma, ou seja, quantos A, quantos E...
+*/ 
+
+$palavra = "Aurélio"; 
+$vogais = ['a', 'e', 'i', 'o', 'u'];
+$totalVogais = 0;
+$vogalMinuscula = strtolower($palavra);
+$comprimento = strlen($vogalMinuscula);
+
+for ($i = 0; $i < $comprimento; $i++) {
+    $vogalMinuscula = strtolower($palavra[$i]);
+    $existeVogal = in_array($vogalMinuscula, $vogais);
+
+    if ($existeVogal) {
+        $totalVogais = $totalVogais + 1;
+    } 
+
+}
+echo "'$palavra' possui $totalVogais vogais\n";
+
+
+//Contador por vogal
+$qtdDeVogal = [
+    'a' => 0,
+    'e' => 0,
+    'i' => 0,
+    'o' => 0,
+    'u' => 0
+];
+
+$totalVogais = 0;
+$tamanho = strlen($palavra);
+
+for ($i = 0; $i < $tamanho; $i++) {
+
+    $vogalMinuscula = strtolower($palavra[$i]);
+    $existeVogal = in_array($vogalMinuscula, $vogais);
+
+    if ($existeVogal) {
+        
+        $totalVogais++;
+        $qtdDeVogal[$vogalMinuscula]++;
+    }
+}
+
+echo "Quantidade de A: " . $qtdDeVogal['a'] .  "\n";
+echo "Quantidade de E: " . $qtdDeVogal['e'] .  "\n";
+echo "Quantidade de I: " . $qtdDeVogal['i'] .  "\n";
+echo "Quantidade de O: " . $qtdDeVogal['o'] .  "\n";
+echo "Quantidade de U: " . $qtdDeVogal['u'] .  "\n";
