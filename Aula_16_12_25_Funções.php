@@ -24,7 +24,7 @@ function imprimeTexto ($texto, $nome = "", $idade = 0){
     echo $idade; 
 }
 imprimetexto($texto, $nome, $idade);
-*/
+
 
 // Calcular quantos segundos tem em 2h e 30min
 
@@ -48,3 +48,24 @@ function calcularOIMC ($peso, $altura){
 }
 
 calcularOIMC ($peso, $altura);
+*/
+
+$salario = "3000";
+$valorDaCompra = "1500";
+
+function parcelamento($salario, $valorDaCompra, $parcelas){
+    $qntDaParcela = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'];
+    $valorParcela = $valorDaCompra / ($qntDaParcela[$parcelas]--);
+
+    $porcentagemSalario = ($salario * 30) / 100;
+
+    if($valorParcela > $porcentagemSalario){
+        echo "O valor da parcela é muito grande para o seu sálario atual, compra negada!";
+    }elseif($valorParcela < $porcentagemSalario){
+        $parcelas += 1;
+        echo "A compra parcelada em $parcelas" . "X fica $valorParcela cada." . " Compra aceita!";
+    }
+}
+
+$parcelas = rand(0, 11);
+parcelamento($salario, $valorDaCompra, $parcelas);
