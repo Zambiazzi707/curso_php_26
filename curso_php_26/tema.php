@@ -302,7 +302,6 @@ echo "Quantidade de U: " . $qtdDeVogal['u'] .  "\n <br>";
  * R.: 01:15:00
  */
 
-
 echo "O jogo começa as 21h, qual a hora do termino do jogo? <br>";
 
 const SESSENTA = 60;
