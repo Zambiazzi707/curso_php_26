@@ -290,7 +290,7 @@ echo "Quantidade de O: " . $qtdDeVogal['o'] .  "\n <br>";
 echo "Quantidade de U: " . $qtdDeVogal['u'] .  "\n <br>";
 */
 
-/**
+/*
  * Exercicio para as férias.
  * Calcular o tempo de duração de um jogo.
  * Ex.: Jogo de futebol (tempo de duracao de 90 min || 1 h e meia)
