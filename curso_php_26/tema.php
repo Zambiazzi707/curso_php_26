@@ -378,4 +378,4 @@ function calcularFimDoJogoB($horasB) {
     echo "<br>";
 }
 $horasB = "23:45:00";
-calcularFimDoJogoB($horasB);
+calcularFimDoJogoB($horasB); 
