@@ -338,7 +338,7 @@ function calcularFimDoJogoA($horas) {
     echo "<br>";
 }
 $horas = "21:00:00";
-calcularFimDoJogoA($horas);
+calcularFimDoJogoA($horas); 
 
 echo "O jogo começa as 23h e 45min, qual a hora do termino do jogo? <br>";
 
