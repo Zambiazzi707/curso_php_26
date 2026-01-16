@@ -290,7 +290,7 @@ echo "Quantidade de O: " . $qtdDeVogal['o'] .  "\n <br>";
 echo "Quantidade de U: " . $qtdDeVogal['u'] .  "\n <br>";
 */
 
-/*
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  * Exercicio para as férias.
  * Calcular o tempo de duração de um jogo.
  * Ex.: Jogo de futebol (tempo de duracao de 90 min || 1 h e meia)
@@ -300,7 +300,7 @@ echo "Quantidade de U: " . $qtdDeVogal['u'] .  "\n <br>";
  * 
  * B-) Comeca: 23h e 45min, qual a hora de termino do jogo?
  * R.: 01:15:00
- */
+ 
 
 echo "O jogo começa as 21h, qual a hora do termino do jogo? <br>";
 
@@ -379,3 +379,51 @@ function calcularFimDoJogoB($horasB) {
 }
 $horasB = "23:45:00";
 calcularFimDoJogoB($horasB); 
+
+
+/** Criar 3 novos objetos/classe que representam os animais abaixo: 
+ * Cachorro, Gato e Papagio.
+ * 
+ * 
+ * Criar um objeto/classe que representa a sala de aula. 
+ * */
+
+class Cachorro {
+    public $raça;
+    public $cor;
+    public $dentes;
+    public $patas;
+    public $rabo;
+    public $orelhas;
+}
+
+class Gato {
+    public $cor;
+    public $dentes;
+    public $patas;
+    public $rabo;
+    public $garras;
+    public $orelhas;
+}
+
+class Papagaio {
+    public $cores;
+    public $bico;
+    public $pernas;
+    public $rabo;
+    public $garras;
+    public $penas;
+}
+class Sala {
+    public $classes;
+    public $cadeiras;
+    public $tv;
+    public $janelas;
+    public $cortinas;
+    public $arCondicionado;
+    public $teto;
+    public $parede;
+    public $monitores;
+    public $pcs;
+}
+
