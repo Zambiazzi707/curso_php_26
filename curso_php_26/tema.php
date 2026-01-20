@@ -427,4 +427,4 @@ class Sala {
     public $pcs;
 }
 
-// Conexao direta restaurada amén
+// Conexao direta restaurada amén senhor
