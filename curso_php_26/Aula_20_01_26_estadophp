@@ -1,0 +1,7 @@
+<?php 
+
+class Estado{
+    public $id;
+    public $estado;
+    public $sigla;
+}
