@@ -426,4 +426,3 @@ class Sala {
     public $monitores;
     public $pcs;
 }
-
