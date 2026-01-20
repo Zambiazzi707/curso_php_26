@@ -426,3 +426,5 @@ class Sala {
     public $monitores;
     public $pcs;
 }
+
+// Conexao direta restaurada
