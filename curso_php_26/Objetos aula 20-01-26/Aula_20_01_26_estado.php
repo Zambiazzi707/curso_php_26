@@ -2,12 +2,13 @@
 
 require_once "./EntityAbstract.php";
 
-class Logradouro{
+class Estado{
     public $id;
-    public $logradouro;
+    public $estado;
+    public $sigla;
 
     public function __construct()
     {
-        $this->tabelaNome = "logradouro";
+        $this->tabelaNome = "estado";
     }
 }
