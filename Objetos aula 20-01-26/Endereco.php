@@ -2,7 +2,8 @@
 
 require_once "./EntityAbstract.php";
 
-class Endereco {
+//Aula 20 01 26
+class Endereco extends EntityAbstract {
     public $logradouro;
     public $cep;
     public $bairro;

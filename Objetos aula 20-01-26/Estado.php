@@ -2,9 +2,10 @@
 
 require_once "./EntityAbstract.php";
 
-class Estado{
+//Aula 20 01 26
+class Estado extends EntityAbstract {
     public $id;
-    public $estado;
+    public $nome;
     public $sigla;
 
     public function __construct()
