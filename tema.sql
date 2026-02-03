@@ -52,3 +52,50 @@ CREATE TABLE `endereco` (
   KEY `endereco_usuario_FK` (`usuario_alteracao`),
   CONSTRAINT `endereco_usuario_FK` FOREIGN KEY (`usuario_alteracao`) REFERENCES `usuario` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+DROP TABLE IF EXISTS `cidade`;
+CREATE TABLE `cidade` (
+  `id` smallint(6) NOT NULL AUTO_INCREMENT,
+  `criado_em` timestamp NULL DEFAULT NULL,
+  `atualizado_em` timestamp NULL DEFAULT NULL,
+  `usuario_alteracao` smallint(6) NOT NULL,
+  `nome` varchar(100) DEFAULT NULL,
+  `codigo_ibge` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `cidade_usuario_FK` (`usuario_alteracao`),
+  CONSTRAINT `cidade_usuario_FK` FOREIGN KEY (`usuario_alteracao`) REFERENCES `usuario` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+DROP TABLE IF EXISTS `estado`;
+CREATE TABLE `estado` (
+  `id` smallint(6) NOT NULL AUTO_INCREMENT,
+  `criado_em` timestamp NULL DEFAULT NULL,
+  `atualizado_em` timestamp NULL DEFAULT NULL,
+  `nome` varchar(255) DEFAULT NULL,
+  `sigla` varchar(2) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+DROP TABLE IF EXISTS `pessoa`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `pessoa` (
+  `id` smallint(6) NOT NULL AUTO_INCREMENT,
+  `criado_em` timestamp NULL DEFAULT NULL,
+  `atualizado_em` timestamp NULL DEFAULT NULL,
+  `usuario_alteracao` smallint(6) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `pessoa`
+--
+
+LOCK TABLES `pessoa` WRITE;
+/*!40000 ALTER TABLE `pessoa` DISABLE KEYS */;
+/*!40000 ALTER TABLE `pessoa` ENABLE KEYS */;
+UNLOCK TABLES;
