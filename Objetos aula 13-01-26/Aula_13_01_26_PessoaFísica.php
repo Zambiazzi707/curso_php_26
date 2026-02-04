@@ -14,61 +14,61 @@ class PessoaFísica extends PessoaAbstract {
     }
 
     public function validar() {
-        $cpf + $this->CPF;
+        $cpf = $this->CPF;
 
         $this->validarCPF($cpf);
     }
 
     private function validarNome(){
-        if(!$this->$nome){
+        if(!$this->nome){
             throw new Exception("O campo NOME não foi preenchido.");
         }
     }
 
     private function validarIdade(){
-        if(!$this->$idade){
+        if(!$this->idade){
             throw new Exception("O campo IDADE não foi preenchido.");
         }
     }
 
     private function validarLogradouro(){
-        if(!$this->$logradouro){
+        if(!$this->logradouro){
             throw new Exception("O campo LOGRADOURO não foi preenchido.");
         }
     }
 
     private function validarCep(){
-        if(!$this->$CEP){
+        if(!$this->cep){
             throw new Exception("O campo CEP não foi preenchido.");
         }
     }
 
     private function validarBairro(){
-        if(!$this->$bairro){
+        if(!$this->bairro){
             throw new Exception("O campo BAIRRO não foi preenchido.");
         }
     }
 
     private function validarCidade(){
-        if(!$this->$cidade){
+        if(!$this->cidade){
             throw new Exception("O campo CIDADE não foi preenchido.");
         }
     }
 
     private function validarEstado(){
-        if(!$this->$estado){
+        if(!$this->estado){
             throw new Exception("O campo ESTADO não foi preenchido.");
         }
     }
 
     private function validarComplemento(){
-        if(!$this->$complemento){
+        if(!$this->complemento){
             throw new Exception("O campo COMPLEMENTO não foi preenchido.");
         }
     }
 
     private function validarPontoReferência(){
-        if(!$this->$pontoReferencia){
+        if(!$this->pontoReferencia){
             throw new Exception("O campo PONTO DE REFERÊNCIA não foi preenchido.");
         }
     }

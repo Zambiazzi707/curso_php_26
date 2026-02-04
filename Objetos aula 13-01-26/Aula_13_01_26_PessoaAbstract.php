@@ -13,16 +13,16 @@ abstract class PessoaAbstract {
     public $pontoReferencia;
 
     public function resetarPessoa() {
-        $this->$nome = "";
-        $this->$idade = "";
-        $this->$logradouro = "";
-        $this->$cep = "";
-        $this->$bairro = "";
-        $this->$cidade = "";
-        $this->$estado = "";
-        $this->$numero = "";
-        $this->$complemento = "";
-        $this->$pontoReferencia = "";
+        $this->nome = "";
+        $this->idade = "";
+        $this->logradouro = "";
+        $this->cep = "";
+        $this->bairro = "";
+        $this->cidade = "";
+        $this->estado = "";
+        $this->numero = "";
+        $this->complemento = "";
+        $this->pontoReferencia = "";
 
     }
 
