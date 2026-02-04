@@ -108,3 +108,101 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2026-01-27 21:44:57
+
+
+-- curso_php_26.cidade definição
+
+CREATE TABLE `cidade` (
+  `id` smallint(6) NOT NULL AUTO_INCREMENT,
+  `criado_em` timestamp NULL DEFAULT NULL,
+  `atualizado_em` timestamp NULL DEFAULT NULL,
+  `usuario_alteracao` smallint(6) NOT NULL,
+  `nome` varchar(100) DEFAULT NULL,
+  `codigo_ibge` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `cidade_usuario_FK` (`usuario_alteracao`),
+  CONSTRAINT `cidade_usuario_FK` FOREIGN KEY (`usuario_alteracao`) REFERENCES `usuario` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+-- curso_php_26.endereco definição
+
+CREATE TABLE `endereco` (
+  `id` smallint(6) NOT NULL AUTO_INCREMENT,
+  `criado_em` timestamp NULL DEFAULT NULL,
+  `atualizado_em` timestamp NULL DEFAULT NULL,
+  `usuario_alteracao` smallint(6) NOT NULL,
+  `logradouro` varchar(255) DEFAULT NULL,
+  `cep` varchar(10) DEFAULT NULL,
+  `bairro` varchar(100) DEFAULT NULL,
+  `numero` varchar(20) DEFAULT NULL,
+  `complemento` varchar(255) DEFAULT NULL,
+  `ponto_referencia` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `endereco_usuario_FK` (`usuario_alteracao`),
+  CONSTRAINT `endereco_usuario_FK` FOREIGN KEY (`usuario_alteracao`) REFERENCES `usuario` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+-- curso_php_26.estado definição
+
+CREATE TABLE `estado` (
+  `id` smallint(6) NOT NULL AUTO_INCREMENT,
+  `criado_em` timestamp NULL DEFAULT NULL,
+  `atualizado_em` timestamp NULL DEFAULT NULL,
+  `nome` varchar(255) DEFAULT NULL,
+  `sigla` varchar(2) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- curso_php_26.pessoa_fisica definição
+
+CREATE TABLE `pessoa_fisica` (
+  `id` smallint(6) NOT NULL AUTO_INCREMENT,
+  `criado_em` timestamp NULL DEFAULT NULL,
+  `atualizado_em` timestamp NULL DEFAULT NULL,
+  `usuario_alteracao` smallint(6) NOT NULL,
+  `nome` varchar(100) DEFAULT NULL,
+  `idade` int(3) DEFAULT NULL,
+  `cpf` varchar(20) NOT NULL,
+  `data_nascimento` date NOT NULL,
+  `nome_mae` varchar(255) DEFAULT NULL,
+  `rg` varchar(10) NOT NULL,
+  `genero` varchar(1) NOT NULL DEFAULT 'M',
+  PRIMARY KEY (`id`),
+  KEY `pf_usuario_FK` (`usuario_alteracao`),
+  CONSTRAINT `pf_usuario_FK` FOREIGN KEY (`usuario_alteracao`) REFERENCES `usuario` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+-- curso_php_26.pessoa_juridica definição
+
+CREATE TABLE `pessoa_juridica` (
+  `id` smallint(6) NOT NULL AUTO_INCREMENT,
+  `criado_em` timestamp NULL DEFAULT NULL,
+  `atualizado_em` timestamp NULL DEFAULT NULL,
+  `usuario_alteracao` smallint(6) NOT NULL,
+  `nome` varchar(100) DEFAULT NULL,
+  `cnpj` varchar(20) NOT NULL,
+  `razao_social` varchar(512) NOT NULL,
+  `cnae` varchar(100) NOT NULL,
+  `inscricao_estadual` varchar(20) NOT NULL,
+  `porte` varchar(100) NOT NULL,
+  `matriz` tinyint(1) NOT NULL,
+  `data_fundacao` date NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `pj_usuario_FK` (`usuario_alteracao`),
+  CONSTRAINT `pj_usuario_FK` FOREIGN KEY (`usuario_alteracao`) REFERENCES `usuario` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- curso_php_26.usuario definição
+
+CREATE TABLE `usuario` (
+  `id` smallint(6) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(100) DEFAULT NULL,
+  `criado_em` timestamp NULL DEFAULT NULL,
+  `atualizado_em` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
