@@ -16,20 +16,36 @@ abstract class EntityAbstract implements EntityInterface {
     public $criadoEm;
     public $atualizadoEm;
     public $usuarioAlteracao;
+    public $bancoDeDados;
 
-    public function criar() {
-
+    public function __construct(BancoDados $banco)
+    {
+        $this->bancoDeDados = $banco;
     }
-    public function obter($id) {
 
+    public function criar() 
+    {
+        $sql = "INSERT INTO $this->tabelaNome;";
     }
-    public function obterTodos($filtros = "") {
 
+    public function obter($id) 
+    {
+        $sql = "SELECT * FROM $this->tabelaNome WHERE id = $id";
+        $this->bancoDeDados->execQuery($sql);
     }
-    public function atualizar($id) {
 
+    public function obterTodos($filtros = "") 
+    {
+        $sql = "SELECT * $this->tabelaNome $filtros;";
     }
-    public function deletar($id) {
 
+    public function atualizar($id) 
+    {
+        $sql = "UPDATE FROM $this->tabelaNome WHERE id = $id;";
+    }
+
+    public function deletar($id) 
+    {
+        $sql = "DELETE FROM $this->tabelaNome WHERE id = $id;";
     }
 }

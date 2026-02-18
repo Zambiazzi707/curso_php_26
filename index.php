@@ -1,38 +1,41 @@
-<?php 
+<?php
 
-$avião; // Sempre declarar a variável antes
+// $_GET
+// $_POST
+// $_REQUEST
+// a funcao empty() trabalha com vazio(null, undefined, [], {}, 0, '0', e false), para esses casos ele retorna TRUE
+// a funcao isset é sim ou não, (true || false , se a propriedade/parametro existir)
+// ?rota=criar - caminho 
+// http://localhost/curso_php_26/ - URL Base
+// http://localhost/curso_php_26/?rota=criar - URL definida/completa 
 
-$avião = "Boeing747";
-/**
- * Tipos primitivos de var
- * string 'texto qualquer' || 'A' || "A" (Não possui diferença entre as aspas)
- * char || character 'A'
- * int || integer '23'
- * float '23.8' (Valor real pequeno)
- * double '23.8' (Valor real grande)
- * decimal '23.8'
- */
+$dados = $_REQUEST;
 
-$valor1 = 81;
-$valor2 = 27;
-$soma = $valor1 + $valor2; // 10 = 15 -> 25 
-// mesma coisa
-$soma = $soma + 3; //28
-$soma +=3; //28 
+$irParaListagem = empty($dados) || !isset($dados["rota"]);
 
-$multiplicação = $valor1 * $valor2 ;
-$divisão = $valor1 / $valor2 ;
+if ($irParaListagem) {
+    echo "Estou na listagem fallback";
+    return; //return chamar funcao listagem 
+}
 
-echo "Ao Multiplicar $valor1 e $valor2 <br> temos = &nbsp;" . $multiplicação;
-echo "<br>";
-echo "<br>";
-echo "Ao Dividir $valor1 e $valor2 <br> temos = &nbsp;" . $divisão;
+$rota = $dados["rota"];
 
-echo "<br>";
-echo "<br>";
+if ($rota == "listar") {
+    echo "estou na listar";
+    return;
+}
 
-$valor3 = 75;
-$valor4 = 6;
-$restoDivisão = $valor3 % $valor4;
-$Dividir = $valor3 / $valor4;
-echo "Ao Dividir $valor3 por $valor4. <br> O resultado será = $Dividir e o resto dessa Divisão será de = " . $restoDivisão;
+if ($rota == "editar") {
+    echo "estou na editar";
+    return;
+}
+
+if ($rota == "criar") {
+    echo "estou na criar";
+    return;
+}
+
+if ($rota == "deletar") {
+    echo "estou na deletar";
+    return;
+}
